@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested and Responsive Tables</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Nested and Responsive Table</h2>
+
+    <div class="table-container">
+
+        <table>
+
+            <tr>
+                <th>Day</th>
+                <th>Lab Details</th>
+                <th>Faculty</th>
+                <th>Room</th>
+                <th>Time</th>
+            </tr>
+
+            <tr>
+                <td>Monday</td>
+
+                <td>
+                    <table>
+                        <tr>
+                            <th>Batch</th>
+                            <th>Subject</th>
+                        </tr>
+
+                        <tr>
+                            <td>A</td>
+                            <td>HTML</td>
+                        </tr>
+
+                        <tr>
+                            <td>B</td>
+                            <td>CSS</td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td>Mr. Sharma</td>
+                <td>Lab 1</td>
+                <td>10 AM - 12 PM</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+</html>
